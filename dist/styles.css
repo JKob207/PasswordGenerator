@@ -3,3 +3,14 @@ body {
   padding: 0;
   overflow: hidden;
 }
+.section-main-view {
+  background-color: pink;
+  width: 75vw;
+  height: 30vh;
+  margin: 20vh auto;
+}
+.header-style {
+  padding: 4vh 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
