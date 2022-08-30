@@ -2,17 +2,27 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inconsolata", monospace;
+  background-color: #efefef;
 }
 .section-main-view {
-  background-color: pink;
+  background-color: #9ccc9c;
   width: 75vw;
   height: 55vh;
   margin: 20vh auto;
 }
+
+@media screen and (min-width: 600px) {
+  .section-main-view {
+    width: 30vw;
+    height: auto;
+  }
+}
 .header-style {
   font-size: 1.4rem;
   text-align: center;
+  color: #000;
+  font-weight: bold;
 }
 
 h1.header-style {
@@ -47,8 +57,10 @@ h2.header-style {
 .first-column .number-range-div .number-viewer {
   height: 35px;
   width: 35px;
-  background-color: white;
-  border: 1px solid black;
+  font-weight: 600;
+  background-color: #0e6b0e;
+  border: 1px solid #fff;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +74,20 @@ h2.header-style {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 5%;
+}
+
+@media screen and (min-width: 600px) {
+  .rules-section-element {
+    flex-direction: row;
+  }
+  .first-column, .second-column {
+    width: 50%;
+  }
+  .rules-section-element {
+    padding-bottom: 2vh;
+  }
 }
 .button-div {
   text-align: center;
@@ -72,6 +96,8 @@ h2.header-style {
 
 .generate-button {
   padding: 8px 15px;
-  border: 1px solid black;
+  border: 1px solid #fff;
   font-size: 16px;
+  color: #fff;
+  background-color: #0e6b0e;
 }
